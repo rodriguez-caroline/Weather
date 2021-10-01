@@ -117,6 +117,9 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\512.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\512-1.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024-2.png" />
+    <ImageAsset Include="Assets.xcassets\thermostat.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\thermostat.imageset\thermostat.png" />
+    <ImageAsset Include="Assets.xcassets\thermostat.imageset\outline_thermostat_white_24dp.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -136,5 +139,8 @@
       <Project>{7B02C70F-9DC5-42CC-BE7D-D6DD47D461A9}</Project>
       <Name>Weather</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\thermostat.imageset\" />
   </ItemGroup>
 </Project>

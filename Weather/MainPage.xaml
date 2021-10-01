@@ -4,8 +4,9 @@
              x:Class="Weather.MainPage">
    
     <ScrollView
-        BackgroundColor="DarkBlue"
-        Padding="20">
+        BackgroundColor="LightSkyBlue"
+        Padding="20"
+        VerticalScrollBarVisibility="Never">
             <StackLayout>
                 <StackLayout
                     Orientation="Vertical">
@@ -37,7 +38,9 @@
                                     FontSize="18"/>
                     </StackLayout>
                 </StackLayout>
-                <StackLayout>
+                <StackLayout
+                    BackgroundColor="DodgerBlue"
+                    Padding="10">
                     <Label
                         Text="River Flood Warning"
                         TextColor="White"
@@ -51,668 +54,875 @@
                         TextColor="White"
                         FontSize="14"/>
                 </StackLayout>
-                <ScrollView Orientation="Horizontal">
-                    <StackLayout>
+                <ScrollView
+                    Orientation="Horizontal"
+                    HorizontalScrollBarVisibility="Never">
+                        <Grid RowSpacing="0" ColumnSpacing="0" BackgroundColor="DodgerBlue" Padding="10">
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/> 
+                            </Grid.ColumnDefinitions>
+                            <StackLayout
+                                BackgroundColor="DodgerBlue"
+                                Padding="10">
+                                    <BoxView Grid.ColumnSpan="27"/>
+                                        <Label
+                                            Text="Hourly Forecast"
+                                            Opacity="0.5"
+                                            TextColor="White"
+                                            FontSize="10"/>
+                                    <StackLayout
+                                        Orientation="Horizontal"
+                                        Spacing="20">
+                                        <StackLayout Grid.Row="1" >
+                                            <Label
+                                                Text="Now"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="78"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="1">
+                                            <Label
+                                                Text="22"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="78"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="2">
+                                            <Label
+                                                Text="23"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="77"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="3">
+                                            <Label
+                                                Text="00"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="75"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="4">
+                                            <Label
+                                                Text="01"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                           <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="74"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="5">
+                                            <Label
+                                                Text="02"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="74"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="6">
+                                            <Label
+                                                Text="03"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="73"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="7">
+                                            <Label
+                                                Text="04"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="72"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="8">
+                                            <Label
+                                                Text="05"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                           <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="71"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="9">
+                                            <Label
+                                                Text="06"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                           <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="70"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="10">
+                                            <Label
+                                                Text="07"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="70"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="11">
+                                            <Label
+                                                Text="07:22"
+                                                TextColor="White"
+                                                FontSize="14"
+                                                HorizontalOptions="Center"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="Sunrise"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="12">
+                                            <Label
+                                                Text="08"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="71"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="13">
+                                            <Label
+                                                Text="09"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="75"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="14">
+                                            <Label
+                                                Text="10"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="80"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="15">
+                                            <Label
+                                                Text="11"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="83"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="16">
+                                            <Label
+                                                Text="12"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="84"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="17">
+                                            <Label
+                                                Text="13"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="86"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="18">
+                                            <Label
+                                                Text="14"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="87"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="19">
+                                            <Label
+                                                Text="15"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="87"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="20">
+                                            <Label
+                                                Text="16"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="88"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="21">
+                                            <Label
+                                                Text="17"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="87"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="22">
+                                            <Label
+                                                Text="18"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="86"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="23">
+                                            <Label
+                                                Text="19"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="84"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="24">
+                                            <Label
+                                                Text="19:18"
+                                                TextColor="White"
+                                                FontSize="14"
+                                                HorizontalOptions="Center"/>
+                                           <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="Sunset"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="25">
+                                            <Label
+                                                Text="20"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                            <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="82"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Grid.Column="26">
+                                            <Label
+                                                Text="21"
+                                                TextColor="White"
+                                                FontSize="14"/>
+                                           <Image
+                                                Source="thermostat"
+                                                HeightRequest="20"/>
+                                            <Label
+                                                Text="81"
+                                                TextColor="White"
+                                                FontSize="16"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                </ScrollView>
+                <Grid RowSpacing="0" ColumnSpacing="0" BackgroundColor="DodgerBlue" Padding="10">
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="130"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+                        <BoxView 
+                            Grid.ColumnSpan="5"/>
+                                <Label Grid.ColumnSpan="5"
+                                   Text="10-Day Forecast"
+                                   TextColor="White"
+                                   FontSize="15"
+                                   Opacity="0.5"
+                                   HorizontalOptions="Start"/>
+                        <BoxView
+                            Grid.Row="1"/>
+                                <Label Grid.Row="1"
+                                   Text="Today"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="1"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="1"
+                            Grid.Column="2" />
+                                <Label Grid.Row="1"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="69"/>
+                        <StackLayout
+                            Grid.Row="1"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="1"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="1"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="89"/>
+
+                       <BoxView
+                            Grid.Row="2"/>
+                                <Label Grid.Row="2"
+                                   Text="Thu"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="2"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="2"
+                            Grid.Column="2" />
+                                <Label Grid.Row="2"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="69"/>
+                        <StackLayout
+                            Grid.Row="2"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="2"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="2"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="89"/>
+                       <BoxView
+                            Grid.Row="3"/>
+                                <Label Grid.Row="3"
+                                   Text="Fri"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="3"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="3"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="3"
+                            Grid.Column="2" />
+                                <Label Grid.Row="3"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="71"/>
+                        <StackLayout
+                            Grid.Row="3"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="3"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="3"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="90"/>
+                       <BoxView
+                            Grid.Row="4"/>
+                                <Label Grid.Row="4"
+                                   Text="Sat"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="4"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="4"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="4"
+                            Grid.Column="2" />
+                                <Label Grid.Row="4"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="71"/>
+                        <StackLayout
+                            Grid.Row="4"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="4"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="4"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="91"/>
+                        <BoxView
+                            Grid.Row="5"/>
+                                <Label Grid.Row="5"
+                                   Text="Sun"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="5"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="5"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="5"
+                            Grid.Column="2" />
+                                <Label Grid.Row="5"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="72"/>
+                        <StackLayout
+                            Grid.Row="5"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="5"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="5"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="89"/>
+                        <BoxView
+                            Grid.Row="6"/>
+                                <Label Grid.Row="6"
+                                   Text="Mon"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="6"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="6"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="6"
+                            Grid.Column="2" />
+                                <Label Grid.Row="6"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="70"/>
+                        <StackLayout
+                            Grid.Row="6"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="6"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="6"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="89"/>
+                        <BoxView
+                            Grid.Row="7"/>
+                                <Label Grid.Row="7"
+                                   Text="Tue"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="7"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="7"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="7"
+                            Grid.Column="2" />
+                                <Label Grid.Row="7"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="70"/>
+                        <StackLayout
+                            Grid.Row="7"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="7"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="7"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="88"/>
+                         <BoxView
+                            Grid.Row="8"/>
+                                <Label Grid.Row="8"
+                                   Text="Wed"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                         <BoxView
+                            Grid.Row="8"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="8"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="8"
+                            Grid.Column="2" />
+                                <Label Grid.Row="8"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="71"/>
+                        <StackLayout
+                            Grid.Row="8"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="8"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="8"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="88"/>
+                        <BoxView
+                            Grid.Row="9"/>
+                                <Label Grid.Row="9"
+                                   Text="Thu"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="9"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="9"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="9"
+                            Grid.Column="2" />
+                                <Label Grid.Row="9"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="72"/>
+                        <StackLayout
+                            Grid.Row="9"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="9"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="9"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="88"/>
+                        <BoxView
+                            Grid.Row="10"/>
+                                <Label Grid.Row="10"
+                                   Text="Fri"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        <BoxView
+                            Grid.Row="10"
+                            Grid.Column="1"/>
+                                <Image
+                                    Grid.Row="10"
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Source="thermostat"/>
+                        <BoxView
+                            Grid.Row="10"
+                            Grid.Column="2" />
+                                <Label Grid.Row="10"
+                                   Grid.Column="2"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="73"/>
+                        <StackLayout
+                            Grid.Row="10"
+                            Grid.Column="3">
+                                <BoxView
+                                   HeightRequest="6"
+                                   Color="White"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView
+                            Grid.Row="10"
+                            Grid.Column="4"/>
+                                <Label Grid.Row="10"
+                                   Grid.Column="4"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="88"/>
+
+                </Grid>
+                <StackLayout
+                    BackgroundColor="DodgerBlue"
+                    Padding="10">
                         <Label
-                            Text="Hourly Forecast"
+                            Text="Air Quality"
                             TextColor="White"
                             FontSize="14"/>
-                        <StackLayout
-                            Orientation="Horizontal"
-                            Spacing="10">
-                            <StackLayout>
-                                <Label
-                                    Text="Now"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="78"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="22"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="78"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="23"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="77"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="00"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="75"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="01"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="74"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="02"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="74"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="03"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="73"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="04"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="72"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="05"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="71"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="06"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="70"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="07"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="70"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="07:22"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="Sunrise"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="08"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="71"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="09"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="75"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="10"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="80"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="11"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="83"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="12"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="84"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="13"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="86"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="14"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="87"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="15"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="87"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="16"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="88"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="17"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="87"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="18"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="86"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="19"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="84"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="19:18"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="Sunset"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="20"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="82"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label
-                                    Text="21"
-                                    TextColor="White"
-                                    FontSize="14"/>
-                                <Label
-                                    Text="imagehere"
-                                    TextColor="White"
-                                    FontSize="10"/>
-                                <Label
-                                    Text="81"
-                                    TextColor="White"
-                                    FontSize="16"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </StackLayout>
-                </ScrollView>
-                <StackLayout>
-                    <Label
-                        Text="10-Day Forecast"
-                        TextColor="White"
-                        FontSize="14"/>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Today"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="69"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="89"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Thu"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="69"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="89"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Fri"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="71"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="90"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Sat"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="71"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="91"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Sun"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="72"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="89"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Mon"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="70"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="89"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Tue"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="70"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="88"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Wed"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="71"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="88"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Thu"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="72"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="88"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal"
-                        HorizontalOptions="StartAndExpand">
-                            <Label
-                                Text="Fri"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="73"
-                                TextColor="White"
-                                FontSize="16"/>
-                            <Label
-                                Text="imagehere"
-                                TextColor="White"
-                                FontSize="10"/>
-                            <Label
-                                Text="88"
-                                TextColor="White"
-                                FontSize="16"/>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout>
-                    <Label
-                        Text="Air Quality"
-                        TextColor="White"
-                        FontSize="14"/>
-                    <Label
-                        Text="60 - Moderate"
-                        TextColor="White"
-                        FontSize="16"/>
-                    <Label
-                        Text="Air Quality is 60, which is similar to yesterday at about this time"
-                        TextColor="White"
-                        FontSize="14"/>
-                    <Label
-                        Text="imagehere"
-                        TextColor="White"
-                        FontSize="10"/>
-                    <Label
-                        Text="See more"
-                        TextColor="White"
-                        FontSize="14"/>
+                        <Label
+                            Text="60 - Moderate"
+                            TextColor="White"
+                            FontSize="16"/>
+                        <Label
+                            Text="Air Quality is 60, which is similar to yesterday at about this time"
+                            TextColor="White"
+                            FontSize="14"/>
+                        <Label
+                            Text="imagehere"
+                            TextColor="White"
+                            FontSize="10"/>
+                        <Label
+                            Text="See more"
+                            TextColor="White"
+                            FontSize="14"/>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal"
-                    HorizontalOptions="Center">
-                        <StackLayout>
+                    HeightRequest="160">
+                        <StackLayout
+                            BackgroundColor="DodgerBlue"
+                            Padding="10"
+                            WidthRequest="175">
                             <Label
                                 Text="UV Index"
                                 TextColor="White"
@@ -738,7 +948,10 @@
                                 TextColor="White"
                                 FontSize="13"/>
                         </StackLayout>
-                        <StackLayout>
+                        <StackLayout
+                            BackgroundColor="DodgerBlue"
+                            Padding="10"
+                            WidthRequest="175">
                             <Label
                                 Text="Precipitation"
                                 TextColor="White"
@@ -754,13 +967,17 @@
                              <Label
                                 Text="None expected in next 10 days."
                                 TextColor="White"
-                                FontSize="13"/>
+                                FontSize="13"
+                                VerticalOptions="EndAndExpand"/>
                         </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal"
-                    HorizontalOptions="Center">
-                        <StackLayout>
+                    HeightRequest="160">
+                        <StackLayout
+                            BackgroundColor="DodgerBlue"
+                            Padding="10"
+                            WidthRequest="175">
                             <Label
                                 Text="Feels Like"
                                 TextColor="White"
@@ -776,9 +993,13 @@
                              <Label
                                 Text="Similar to the actual temperature."
                                 TextColor="White"
-                                FontSize="13"/>
+                                FontSize="13"
+                                VerticalOptions="EndAndExpand"/>
                         </StackLayout>
-                        <StackLayout>
+                        <StackLayout
+                            BackgroundColor="DodgerBlue"
+                            Padding="10"
+                            WidthRequest="175">
                             <Label
                                 Text="Humidity"
                                 TextColor="White"
@@ -790,13 +1011,17 @@
                              <Label
                                 Text="The dew point is 65 right now."
                                 TextColor="White"
-                                FontSize="13"/>
+                                FontSize="13"
+                                VerticalOptions="EndAndExpand"/>
                         </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal"
-                    HorizontalOptions="Start">
-                        <StackLayout>
+                    HeightRequest="160">
+                        <StackLayout
+                            BackgroundColor="DodgerBlue"
+                            Padding="10"
+                            WidthRequest="175">
                             <Label
                                 Text="Visibility"
                                 TextColor="White"
@@ -808,9 +1033,11 @@
                              <Label
                                 Text="It's clear right now."
                                 TextColor="White"
-                                FontSize="13"/>
+                                FontSize="13"
+                                VerticalOptions="EndAndExpand"/>
                         </StackLayout>
-                        <StackLayout>
+                        <StackLayout
+                            WidthRequest="175">
                             <!--<Label
                                 Text="Humidity"
                                 TextColor="White"
